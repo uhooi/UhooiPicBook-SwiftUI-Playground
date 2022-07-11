@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		11E2DA6C287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */; };
 		11E2DA6D287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */; };
-		11E2DA6E287C3CAC0090C947 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5D287C3CAB0090C947 /* ContentView.swift */; };
-		11E2DA6F287C3CAC0090C947 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5D287C3CAB0090C947 /* ContentView.swift */; };
 		11E2DA70287C3CAC0090C947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E2DA5E287C3CAC0090C947 /* Assets.xcassets */; };
 		11E2DA71287C3CAC0090C947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E2DA5E287C3CAC0090C947 /* Assets.xcassets */; };
+		4BC16FA5287C67D1006F8447 /* MonsterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UhooiPicBookSwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
-		11E2DA5D287C3CAB0090C947 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11E2DA5E287C3CAC0090C947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E2DA63287C3CAC0090C947 /* UhooiPicBookSwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UhooiPicBookSwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E2DA69287C3CAC0090C947 /* UhooiPicBookSwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UhooiPicBookSwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E2DA6B287C3CAC0090C947 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +53,8 @@
 		11E2DA5B287C3CAB0090C947 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BC16FA2287C677C006F8447 /* UI */,
 				11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */,
-				11E2DA5D287C3CAB0090C947 /* ContentView.swift */,
 				11E2DA5E287C3CAC0090C947 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +75,22 @@
 				11E2DA6B287C3CAC0090C947 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4BC16FA2287C677C006F8447 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4BC16FA3287C67B6006F8447 /* MonsterList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4BC16FA3287C67B6006F8447 /* MonsterList */ = {
+			isa = PBXGroup;
+			children = (
+				4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */,
+			);
+			path = MonsterList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +191,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E2DA6E287C3CAC0090C947 /* ContentView.swift in Sources */,
 				11E2DA6C287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */,
+				4BC16FA5287C67D1006F8447 /* MonsterCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +200,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E2DA6F287C3CAC0090C947 /* ContentView.swift in Sources */,
 				11E2DA6D287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

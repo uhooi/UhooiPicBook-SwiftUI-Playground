@@ -11,7 +11,11 @@ import SwiftUI
 struct UhooiPicBookSwiftUIPlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack(spacing: 12) {
+                MonsterCellView(iconName: "uhooi", name: "uhooi")
+                MonsterCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
+            }
+            .padding(.horizontal, 16)
         }
     }
 }
