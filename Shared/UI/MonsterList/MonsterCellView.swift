@@ -22,7 +22,7 @@ struct MonsterCellView: View {
             Spacer()
         }
         .padding(16)
-        .frame(maxWidth: .infinity, minHeight: 100)
+        .frame(maxWidth: .infinity)
         .background(
             Color(.systemBackground)
                 .cornerRadius(3)
