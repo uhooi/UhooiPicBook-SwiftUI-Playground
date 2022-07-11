@@ -22,13 +22,12 @@ struct MonsterCellView: View {
             Spacer()
         }
         .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 100)
         .background(
             Color(.systemBackground)
                 .cornerRadius(3)
                 .elevate(elevation: 1)
         )
-        .padding(8)
-        .frame(maxWidth: .infinity, minHeight: 116)
     }
 }
 
@@ -45,10 +44,10 @@ private extension View {
 
 struct MonsterCellView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 28) {
             MonsterCellView(iconName: "uhooi", name: "uhooi")
             MonsterCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 24)
     }
 }
