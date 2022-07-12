@@ -12,21 +12,32 @@ struct MonsterCellView: View {
     var name: String
     
     var body: some View {
-        HStack(spacing: 32) {
+        Label {
+            Text(name)
+        } icon: {
             Image(iconName)
                 .resizable()
-                .scaledToFit()
-                .frame(width: 68, height: 68)
-            Text(name)
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .labelStyle(MonsterCellLabelStyle())
         .padding(16)
         .background(
             Color(.systemBackground)
                 .cornerRadius(3)
                 .elevate(elevation: 1)
         )
+    }
+}
+
+private struct MonsterCellLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(spacing: 32) {
+            configuration.icon
+                .scaledToFit()
+                .frame(width: 68, height: 68)
+            configuration.title
+                .font(.title)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 }
 
