@@ -19,10 +19,9 @@ struct MonsterCellView: View {
                 .frame(width: 68, height: 68)
             Text(name)
                 .font(.title)
-            Spacer()
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(16)
-        .frame(maxWidth: .infinity)
         .background(
             Color(.systemBackground)
                 .cornerRadius(3)
