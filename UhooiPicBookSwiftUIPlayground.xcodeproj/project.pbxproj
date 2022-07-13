@@ -11,6 +11,7 @@
 		11E2DA6D287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */; };
 		11E2DA70287C3CAC0090C947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E2DA5E287C3CAC0090C947 /* Assets.xcassets */; };
 		11E2DA71287C3CAC0090C947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E2DA5E287C3CAC0090C947 /* Assets.xcassets */; };
+		4B13CD70287F01CB002F91BA /* MonsterCellLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B13CD6F287F01CB002F91BA /* MonsterCellLabelStyle.swift */; };
 		4BC16FA5287C67D1006F8447 /* MonsterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		11E2DA63287C3CAC0090C947 /* UhooiPicBookSwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UhooiPicBookSwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E2DA69287C3CAC0090C947 /* UhooiPicBookSwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UhooiPicBookSwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E2DA6B287C3CAC0090C947 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4B13CD6F287F01CB002F91BA /* MonsterCellLabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterCellLabelStyle.swift; sourceTree = "<group>"; };
 		4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		4BC16FA3287C67B6006F8447 /* MonsterList */ = {
 			isa = PBXGroup;
 			children = (
+				4B13CD6F287F01CB002F91BA /* MonsterCellLabelStyle.swift */,
 				4BC16FA4287C67D1006F8447 /* MonsterCellView.swift */,
 			);
 			path = MonsterList;
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B13CD70287F01CB002F91BA /* MonsterCellLabelStyle.swift in Sources */,
 				11E2DA6C287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */,
 				4BC16FA5287C67D1006F8447 /* MonsterCellView.swift in Sources */,
 			);
