@@ -1,5 +1,5 @@
 //
-//  MonsterCellLabelStyle.swift
+//  MonsterListCellLabelStyle.swift
 //  UhooiPicBookSwiftUIPlayground (iOS)
 //
 //  Created by uhooi on 2022/07/13.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MonsterCellLabelStyle: LabelStyle {
+struct MonsterListCellLabelStyle: LabelStyle {
     func makeBody(configuration: Configuration) -> some View {
         HStack(spacing: 32) {
             configuration.icon
@@ -20,13 +20,13 @@ struct MonsterCellLabelStyle: LabelStyle {
     }
 }
 
-extension LabelStyle where Self == MonsterCellLabelStyle {
-    static var monsterCell: MonsterCellLabelStyle {
+extension LabelStyle where Self == MonsterListCellLabelStyle {
+    static var monsterListCell: MonsterListCellLabelStyle {
         .init()
     }
 }
 
-struct MonsterCellLabelStyle_Previews: PreviewProvider {
+struct MonsterListCellLabelStyle_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Label {
@@ -42,6 +42,6 @@ struct MonsterCellLabelStyle_Previews: PreviewProvider {
                     .resizable()
             }
         }
-        .labelStyle(.monsterCell)
+        .labelStyle(.monsterListCell)
     }
 }

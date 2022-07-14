@@ -13,8 +13,8 @@ struct MonsterListView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 28) {
-                MonsterCellView(iconName: "uhooi", name: "uhooi")
-                MonsterCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
+                MonsterListCellView(iconName: "uhooi", name: "uhooi")
+                MonsterListCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
             }
             .padding(.horizontal, 24)
         }

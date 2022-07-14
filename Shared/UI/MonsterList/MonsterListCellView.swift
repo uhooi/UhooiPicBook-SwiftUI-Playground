@@ -1,5 +1,5 @@
 //
-//  MonsterCellView.swift
+//  MonsterListCellView.swift
 //  UhooiPicBookSwiftUIPlayground (iOS)
 //
 //  Created by uhooi on 2022/07/11.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MonsterCellView: View {
+struct MonsterListCellView: View {
     var iconName: String
     var name: String
     
@@ -18,7 +18,7 @@ struct MonsterCellView: View {
             Image(iconName)
                 .resizable()
         }
-        .labelStyle(.monsterCell)
+        .labelStyle(.monsterListCell)
         .padding(16)
         .background(
             Color(.systemBackground)
@@ -39,11 +39,11 @@ private extension View {
     }
 }
 
-struct MonsterCellView_Previews: PreviewProvider {
+struct MonsterListCellView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 28) {
-            MonsterCellView(iconName: "uhooi", name: "uhooi")
-            MonsterCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
+            MonsterListCellView(iconName: "uhooi", name: "uhooi")
+            MonsterListCellView(iconName: "uhooi", name: "とてつもなく長い名前のモンスター")
         }
         .padding(.horizontal, 24)
     }
