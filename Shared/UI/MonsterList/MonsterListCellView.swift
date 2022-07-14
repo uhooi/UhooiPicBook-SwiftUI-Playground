@@ -28,17 +28,6 @@ struct MonsterListCellView: View {
     }
 }
 
-private extension View {
-    func elevate(elevation: CGFloat) -> some View {
-        self.shadow(
-            color: .init(white: 0, opacity: 0.24),
-            radius: elevation,
-            x: 0,
-            y: elevation
-        )
-    }
-}
-
 struct MonsterListCellView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 28) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D964F12880063500A3C750 /* View+Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D964F02880063500A3C750 /* View+Material.swift */; };
 		11E2DA6C287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */; };
 		11E2DA6D287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */; };
 		11E2DA70287C3CAC0090C947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E2DA5E287C3CAC0090C947 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D964F02880063500A3C750 /* View+Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Material.swift"; sourceTree = "<group>"; };
 		11E2DA5C287C3CAB0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UhooiPicBookSwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
 		11E2DA5E287C3CAC0090C947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E2DA63287C3CAC0090C947 /* UhooiPicBookSwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UhooiPicBookSwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D964EF2880062100A3C750 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11D964F02880063500A3C750 /* View+Material.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		11E2DA56287C3CAB0090C947 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		4BC16FA2287C677C006F8447 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				11D964EF2880062100A3C750 /* Extensions */,
 				4BC16FA3287C67B6006F8447 /* MonsterList */,
 			);
 			path = UI;
@@ -199,6 +210,7 @@
 			files = (
 				4B13CD70287F01CB002F91BA /* MonsterListCellLabelStyle.swift in Sources */,
 				11E2DA6C287C3CAC0090C947 /* UhooiPicBookSwiftUIPlaygroundApp.swift in Sources */,
+				11D964F12880063500A3C750 /* View+Material.swift in Sources */,
 				4BC16FA5287C67D1006F8447 /* MonsterListCellView.swift in Sources */,
 				4B13CD72287F0208002F91BA /* MonsterListView.swift in Sources */,
 			);
