@@ -12,6 +12,16 @@ struct MonsterListCellView: View {
     var name: String
     
     var body: some View {
+        monsterLabel
+            .padding(16)
+            .background(
+                Color(.systemBackground)
+                    .cornerRadius(3)
+                    .elevate(elevation: 1)
+            )
+    }
+    
+    private var monsterLabel: some View {
         Label {
             Text(name)
         } icon: {
@@ -19,12 +29,6 @@ struct MonsterListCellView: View {
                 .resizable()
         }
         .labelStyle(.monsterListCell)
-        .padding(16)
-        .background(
-            Color(.systemBackground)
-                .cornerRadius(3)
-                .elevate(elevation: 1)
-        )
     }
 }
 
